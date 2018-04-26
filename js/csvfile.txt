@@ -1,0 +1,7 @@
+"index":"name":"price":"available":"desc":"capacity":"itemType":"imgUrl"
+1:tent1:1:true:Tents are really very use full while trekking:5:tent:../images/tent1.jpg
+2:tent2:2:true:Tents are really very use full while trekking:5:tent:../images/tent1.jpg
+3:tent3:3:true:Tents are really very use full while trekking:5:tent:../images/tent1.jpg
+4:tent4:4:true:Tents are really very use full while trekking:5:tent:../images/tent1.jpg
+5:tent5:5:true:Tents are really very use full while trekking:5:tent:../images/tent1.jpg
+6:tent6:6:true:Tents are really very use full while trekking:5:tent:../images/tent1.jpg
