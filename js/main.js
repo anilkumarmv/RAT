@@ -382,14 +382,23 @@ app.directive('rentItem',function($rootScope){
 		element.css("margin-bottom","7px");
 		element.css("border","1px solid #E9E9E9");
 		element.css("transition","width 2s");
-                var link = function($scope, element, attributes) {
-			$scope.selectedItem = function() {
-				console.log("selected item is "+$scope.data.name);
-				$rootScope.selectedItemsArray.push($scope.data) 
-				console.log("selected items total "+$rootScope.selectedItemsArray.length)
-			}	
-                }
-    	        return link;
+            var link = function($scope, element, attributes) {
+				$scope.selectedItem = function() {
+					console.log("selected item is "+$scope.data.name);
+					$rootScope.selectedItemsArray.push($scope.data) 
+					console.log("selected items total "+$rootScope.selectedItemsArray.length)
+				}
+				$scope.showItemDetails = function() {
+					$rootScope.showItemDetailsView=true;
+					$rootScope.itemViewData = $scope.data
+					console.log("mouse over")
+				}
+				$scope.hideItemDetails = function() {
+					$rootScope.showItemDetailsView=false;
+					console.log("mouse leave")
+				}
+            }
+   	        return link;
 	}
 	return dir;
 })

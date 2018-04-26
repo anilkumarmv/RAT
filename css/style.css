@@ -120,6 +120,8 @@ border-top: 1px solid #eee;
 #item-info-part1 {
     height: 49%;
     background-color: red;
+	color: white;
+	
 }
 #item-info-part2 {
     height: 50%;

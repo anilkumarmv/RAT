@@ -97,7 +97,7 @@
       <span class="sr-only">Next</span>
     </a>
 </div><!-- myCarousel close-->
-<div style="height:650px; width:100%">
+<div style="height:650px; width:100%" ng-controller="viewsCtrl">
 	<div id="directive-items-container" class="ScrollStyle container-fluid text-center" style="margin-top: 5px;background-color: #617EA8;">
 		<div ng-init="itemsListObj[0]" ng-repeat="itemset in itemsListObj">
 			<rent-item data="itemset">
@@ -105,8 +105,16 @@
 		</div>
 	</div>
 	<div id="item-info-show">
-		<div id="item-info-part1">
-			part1
+	{{showItemDetailsView}}
+		<div id="item-info-part1" ng-if="showItemDetailsView">
+			<p>Details of hovered item</br>
+			Name:{{itemViewData.index}}</br>
+			Name:{{itemViewData.name}} </br>
+			price: {{itemViewData.price}}</br>
+			desc:{{itemViewData.desc}}</br>
+			capacity:{{itemViewData.capacity}}</br>
+			Availability:{{itemViewData.available}}</br>
+			</p>
 		</div>
 		<hr>
 		<div id="item-info-part2">
